@@ -49,20 +49,25 @@ a:hover {
 
 ul {
   margin-left: 20px;
+  list-style-type: none;
 }
 
-li {
+.about-me li {
   margin-bottom: 5px;
+  list-style-type: initial;
 }
 
 .container_wrap {
+  display: flex;
   width: 90%;
   margin: 10px auto 50px;
   position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
-  width: 100%;
   height: 250px;
   height: 186px;
 }
@@ -87,27 +92,23 @@ li {
 .nav {
   position: relative;
   display: flex;
-  width: 346px;
-  height: 275px;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  margin-right: 200px;
-  float: left;
+  padding: 1rem 0;
 }
 
 .menu-item {
-  width: 100%;
   font-size: 1rem;
   color: black;
+  padding: 0.75rem;
 }
 
 .main {
   position: relative;
-  width: 60%;
-  display: block;
-  float: left;
+  /* width: 60%; */
+  padding: 0 0.5rem;
 }
 
 #current {
@@ -141,19 +142,34 @@ li {
   font-style: italic;
 }
 
+address {
+  all: initial;
+}
+
+@media (min-width: 1024px) {
+  .container_wrap {
+    flex-direction: row;
+    align-items: normal;
+    gap: 3rem;
+  }
+  .middle_container {
+    margin-top: 10rem;
+  }
+}
+
 @media (max-width: 1520px) {
-  .nav {
+  /* .nav {
     margin-right: 40px;
   }
 
   .main {
     float: right;
-  }
+  } */
 }
 
 /* Center content when in portrait mode */
 @media (orientation: portrait), (max-width: 1075px) {
-  .logo {
+  /* .logo {
     margin: auto;
     width: 325px;
     aspect-ratio: 1 / 0.53;
@@ -173,7 +189,7 @@ li {
     float: none;
     margin: auto;
     width: 80%;
-  }
+  } */
 }
 
 .bottom_container {
@@ -183,4 +199,8 @@ li {
   margin-top: auto;
   text-align: center;
   color: white;
+}
+
+.resources-middle {
+  flex: 1;
 }
