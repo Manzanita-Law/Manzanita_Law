@@ -204,3 +204,28 @@ address {
 .resources-middle {
   flex: 1;
 }
+
+.banner {
+  background-color: #6e2405;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text {
+  flex: 1;
+}
+
+.banner-close {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  line-height: 20px;
+}
