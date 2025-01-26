@@ -229,3 +229,23 @@ address {
   font-size: 20px;
   line-height: 20px;
 }
+
+.blue {
+  color: blue;
+}
+
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.wrapped-image {
+  display: inline-block;
+  float: right;
+  margin: 0px 20px 10px 20px;
+  max-width: 200px;
+  height: auto;
+  border: #6e2405 solid 3px;
+  border-radius: 10px;
+}
