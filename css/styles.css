@@ -146,52 +146,6 @@ address {
   all: initial;
 }
 
-@media (min-width: 1024px) {
-  .container_wrap {
-    flex-direction: row;
-    align-items: normal;
-    gap: 3rem;
-  }
-  .middle_container {
-    margin-top: 10rem;
-  }
-}
-
-@media (max-width: 1520px) {
-  /* .nav {
-    margin-right: 40px;
-  }
-
-  .main {
-    float: right;
-  } */
-}
-
-/* Center content when in portrait mode */
-@media (orientation: portrait), (max-width: 1075px) {
-  /* .logo {
-    margin: auto;
-    width: 325px;
-    aspect-ratio: 1 / 0.53;
-  }
-
-  .border {
-    margin: auto;
-    width: 325px;
-  }
-
-  .nav {
-    float: none;
-    margin: 0 auto 50px auto;
-  }
-
-  .main {
-    float: none;
-    margin: auto;
-    width: 80%;
-  } */
-}
-
 .bottom_container {
   background-color: #6e2405;
   width: 100%;
@@ -241,11 +195,75 @@ address {
 }
 
 .wrapped-image {
-  display: inline-block;
-  float: right;
-  margin: 0px 20px 10px 20px;
+  margin: 1rem auto;
   max-width: 200px;
   height: auto;
   border: #6e2405 solid 3px;
   border-radius: 10px;
+}
+
+.wrapped-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .container_wrap {
+    flex-direction: row;
+    align-items: normal;
+    gap: 3rem;
+  }
+  .middle_container {
+    margin-top: 10rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapped-image {
+    display: inline-block;
+    float: right;
+    margin: 0px 20px 10px 20px;
+    max-width: 200px;
+    height: auto;
+    border: #6e2405 solid 3px;
+    border-radius: 10px;
+  }
+  .wrapped-image-container {
+    display: block;
+  }
+}
+
+@media (max-width: 1520px) {
+  /* .nav {
+    margin-right: 40px;
+  }
+
+  .main {
+    float: right;
+  } */
+}
+
+/* Center content when in portrait mode */
+@media (orientation: portrait), (max-width: 1075px) {
+  /* .logo {
+    margin: auto;
+    width: 325px;
+    aspect-ratio: 1 / 0.53;
+  }
+
+  .border {
+    margin: auto;
+    width: 325px;
+  }
+
+  .nav {
+    float: none;
+    margin: 0 auto 50px auto;
+  }
+
+  .main {
+    float: none;
+    margin: auto;
+    width: 80%;
+  } */
 }
